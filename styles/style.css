@@ -33,20 +33,28 @@
     list-style: none;
 }
 
-.header-nav-lots,
-.header-nav-about {
-    list-style: circle;
+.header-nav-main {
+
 }
 
 .header-nav-link {
     text-decoration: none;
 }
 
-.logo_header {
+.header-nav-lots,
+.header-nav-about {
+    list-style: circle;
+}
+
+.header_logo {
     
 }
 
-.address {
+.logo_link {
+
+}
+
+.address-header {
     
 }
 
@@ -57,47 +65,48 @@
 
 }
 
-.title_cover {
+.cover-title {
 
 }
 
-.discription {
+.cover-discription {
 
 }
 
-.text {
+.cover-text {
 
 }
 
-.button {
+.cover-button {
 
 }
 
 .lots {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.title_lots {
-
-}
-
-.frames {
+.title-lots {
 
 }
 
-.first_frame {
+.frame {
 
 }
 
-.second_frame {
+.frame-film {
 
 }
 
-.third_frame {
+.frame-book {
 
 }
 
-.more {
+.frame-picture {
+
+}
+
+.frame-more {
 
 }
 
@@ -105,23 +114,55 @@
 
 }
 
-.colimn_logo {
+.colimn-logo {
 
 }
 
-.column_about {
+.column-about {
 
 }
 
-.heading_about {
+.heading-about {
 
 }
 
-.text_about {
+.text-about {
     
 }
 
 .footer {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
+.footer-container {
+
+}
+
+.footer-address {
+
+}
+
+.footer-nav {
+
+}
+
+.footer-nav-list {
+
+}
+
+.footer-nav-main {
+
+}
+
+.footer-nav-lots {
+
+}
+
+.footer-nav-about {
+
+}
+
+.footer-img {
+    
 }
