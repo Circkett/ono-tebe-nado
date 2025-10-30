@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
 <!--Тело страницы-->
-  <body class="body">
+  <body>
     <!--Шапка сайта-->
     <header class="header">
       <!--Контейнер навигации в шапке-->
       <nav class="header__menu">
         <!--Список ссылок-->
-        <ul class="header__links-list-item">
+        <ul class="header__links-list">
           <!--Пункт списка Главная-->
           <li class="header__links-list-item">
             <!--Ссылка без кружочка-->
@@ -37,13 +37,15 @@
         </ul>
       </nav>
       <!--Контейнер с логотипом-->
-      <div header__logo>
+      <div class="header__logo">
+        <!--Ссылка-->
         <a href="#0">
           <!--Картинка с логотипом-->
           <img src="./images/logo-white.svg" alt="Логотип Оно тебе надо" class="header__logo-image">
         </a>
       </div>
       <!--Контейнер с адресом-->
+      <!--Класс для выравнивания блока в шапке-->
       <div class="address header__address">
         <!-- Адрес в шапке-->
         <address></address>
@@ -56,17 +58,16 @@
         <!--Контейнер полупрозрачного блока поверх секции-->
         <div class="overlay">
         </div>
-        <!--Для превращения строк заголовка в блочный элемент-->
-        <div class="aligned-text">
+        <div>
           <!--Заголовок-->
           <h1 class="cover__title">
           <!--Чтобы текст разбился на 3 строки-->
           <!--Классы для выравнивания строк текста-->
           <!--Класс для управления межбуквенным расстоянием в местах, где есть эти акценты-->
-            <span class="aligned-text_left letter-spacing-extended"></span>
-            <span class="aligned-text_center letter-spacing-extended"></span>
+            <span class="aligned-text aligned-text_left letter-spacing-extended"></span>
+            <span class="aligned-text aligned-text_center letter-spacing-extended"></span>
           <!--Класс для обнуления общего межбуквенного расстояния у последней буквы-->
-            <span class="aligned-text_right letter-spacing-extended no-letter-spacing"></span>
+            <span class="aligned-text aligned-text_right letter-spacing-extended no-letter-spacing"></span>
           </h1>
         </div>
         <!--Контейнер с подзаголовком и кнопкой-->
@@ -80,7 +81,7 @@
       <!--Секция с лотами-->
       <section class="lots">
         <!--Заголовок-->
-        <h1 class="lots__heading"></h1>
+        <h2 class="lots__heading"></h1>
         <!--Контейнер списка карточек-->
         <div class="lots__card-list">
           <ul>
@@ -183,19 +184,25 @@
       <ul class="footer__social-list">
         <!--Пункт списка Youtube-->
         <li class="footer__social-list-item">
+          <!--Ссылка-->
           <a class="footer__social-link">
+            <!--Картинка Ютуб-->
             <img src="./images/yt.svg" alt="Ссылка на Ютуб" class="footer__social-icon">
           </a>
         </li>
         <!--Пункт списка VK-->
         <li class="footer__social-list-item">
+          <!--Ссылка-->
           <a class="footer__social-link">
+            <!--Картинка ВК-->
             <img src="./images/vk.svg" alt="Ссылка на ВК" class="footer__social-icon">
           </a>
         </li>
         <!--Пункт списка Pinterest-->
         <li class="footer__social-list-item">
+          <!--Ссылка-->
           <a class="footer__social-link">
+            <!--Картинка Пинтерест-->
             <img src="./images/pinterest.svg" alt="Ссылка на Пинтерест" class="footer__social-icon">
           </a>
         </li>
