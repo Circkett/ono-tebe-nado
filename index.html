@@ -14,79 +14,141 @@
   <body class="body">
     <!--Шапка сайта-->
     <header class="header">
-      <!--Блок навигации в шапке-->
-      <nav class="menu"></nav>
-      <!--Логотип в шапке-->
-      <a class="logo"></a>
-      <!-- Адрес в шапке-->
-      <address class="contacts"></address>
+      <!--Контейнер навигации в шапке-->
+      <nav class="header__menu">
+        <!--Список ссылок-->
+        <ul class="header__links-list-item">
+          <!--Пункт списка Главная-->
+          <li class="header__links-list-item">
+            <!--Ссылка без кружочка-->
+            <!--Выбранная ссылка без подчёркивания-->
+            <a class="header__link header__links-list-item_no-bullit header__link_active"></a>
+          </li>
+          <!--Пункт списка Посмотреть лоты-->
+          <li class="header__links-list-item">
+            <!--Ссылка-->
+            <a class="header__link"></a>
+          </li>
+          <!--Пункт списка Об аукционе-->
+          <li class="header__links-list-item">
+            <!--Ссылка-->
+            <a class="header__link"></a>
+          </li>
+        </ul>
+      </nav>
+      <!--Контейнер с логотипом-->
+      <div header__logo>
+        <a href="#0">
+          <!--Картинка с логотипом-->
+          <img src="./images/logo-white.svg" alt="Логотип Оно тебе надо" class="header__logo-image">
+        </a>
+      </div>
+      <!--Контейнер с адресом-->
+      <div class="address header__address">
+        <!-- Адрес в шапке-->
+        <address></address>
+      </div>
     </header>
     <!--Контейнер, отображает содержимое страницы-->
     <main>
       <!--Секция cover-->
       <section class="cover">
-        <!--Заголовок-->
-        <h1>
+        <!--Контейнер полупрозрачного блока поверх секции-->
+        <div class="overlay">
+        </div>
+        <!--Для превращения строк заголовка в блочный элемент-->
+        <div class="aligned-text">
+          <!--Заголовок-->
+          <h1 class="cover__title">
           <!--Чтобы текст разбился на 3 строки-->
-          <span></span>
-          <span></span>
-          <span></span>
-        </h1>
-        <!--Контейнер с описанием и кнопкой-->
-        <div class="discription">
-          <p></p>
-          <button></button>
+          <!--Классы для выравнивания строк текста-->
+          <!--Класс для управления межбуквенным расстоянием в местах, где есть эти акценты-->
+            <span class="aligned-text_left letter-spacing-extended"></span>
+            <span class="aligned-text_center letter-spacing-extended"></span>
+          <!--Класс для обнуления общего межбуквенного расстояния у последней буквы-->
+            <span class="aligned-text_right letter-spacing-extended no-letter-spacing"></span>
+          </h1>
+        </div>
+        <!--Контейнер с подзаголовком и кнопкой-->
+        <div class="cover__description">
+          <!--Текст подзаголовка-->
+          <p class="cover__description-text"></p>
+          <!--Кнопка "Сделать ставку"-->
+          <button class="bet-button"></button>
         </div>
       </section>
       <!--Секция с лотами-->
       <section class="lots">
         <!--Заголовок-->
-        <h1></h1>
-        <!--Контейнер списка-->
-        <ul>
-          <!--Маркированный список - Фильм-->
-          <li class="list-film">
-            <!--Карточка-ссылка списка Фильм-->
-            <a href="#0">
-              <!--Контент списка Фильм-->
-              <article></article>
-            </a>
-          </li>
-          <!--Маркированный список - Книга-->
-          <li>
-            <!--Карточка-ссылка списка Книга-->
-            <a href="#0">
-              <!--Контент списка Книга-->
-              <article></article>
-            </a>
-          </li>
-          <!--Маркированный список - Картина-->
-          <li>
-            <!-- Карточка-ссылка Картина-->
-            <a href="#0">
-              <!--Контент списка Картина-->
-              <article></article>
-            </a>
-          </li>
-        </ul>
+        <h1 class="lots__heading"></h1>
+        <!--Контейнер списка карточек-->
+        <div class="lots__card-list">
+          <ul>
+            <!--Маркированный список - Фильм-->
+            <li class="lots__card-list-item">
+              <!--Ссылка, обрамляющая карточку Фильм-->
+              <a href="#0" class="card-link">
+                <!--Контент карточки Фильм-->
+                <article class="card card_type_film overlay">
+                  <!--Заголовок карточки Фильм-->
+                  <h3 class="card__title"></h3>
+                  <!--Текст карточки Фильм-->
+                  <p class="card__text"></p>
+                </article>
+              </a>
+            </li>
+            <!--Маркированный список - Книга-->
+            <li class="lots__card-list-item">
+              <!--Ссылка, обрамляющая карточку Книга-->
+              <a href="#0" class="card-link">
+                <!--Контент карточки Книга-->
+                <article class="card card_type_book overlay">
+                  <!--Заголовок карточки Книга-->
+                  <h3 class="card__title"></h3>
+                  <!--Текст карточки Книга-->
+                  <p class="card__text"></p>
+                </article>
+              </a>
+            </li>
+            <!--Маркированный список - Картина-->
+            <li class="lots__card-list-item">
+              <!-- Ссылка, обрамляющая карточку Картина-->
+              <a href="#0" class="card-link">
+                <!--Контент карточки Картина-->
+                <article class="card card_type_picture overlay">
+                  <!--Заголовок карточки Картина-->
+                  <h3 class="card__title"></h3>
+                  <!--Текст карточки Картина-->
+                  <p class="card__text"></p>
+                </article>
+              </a>
+            </li>
+          </ul>
+        </div>
         <!--Ссылка "посмотреть больше"-->
-        <a></a>
+        <a class="lots__look-more-link"></a>
       </section>
       <!--Секция "Об акуционе"-->
       <section class="about">
-        <!--Контейнер для колонки с лого-->
-        <div></div>
-        <!--Контейнер для колонки с текстом-->
-        <div>
-          <!--Заголовок-->
-          <h1></h1>
-          <!--Контейнер для параграфов-->
-          <div>
-            <!--Первый параграф-->
-            <p></p>
-            <!--Второй параграф-->
-            <p></p>
-          </div>
+        <!--Контейнер с логотипом-->
+        <div class="about__column about__logo">
+          <!--Изображение логотипа-->
+          <img src="./images/logo-black.svg" alt="Логотип Оно тебе надо" class="about__logo-image">
+        </div>
+        <!--Контейнер с текстом-->
+        <div class="about__column">
+          <!--Секция заголовка-->
+          <section>
+            <!--Заголовок-->
+            <h1 class="about__title"></h1>
+            <!--Блок с текстом-->
+            <div class="about__text">
+              <!--Первый параграф-->
+              <p></p>
+              <!--Второй параграф-->
+              <p></p>
+            </div>
+          </section>
         </div>
       </section>
     </main>
