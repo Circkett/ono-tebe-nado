@@ -1,1 +1,44 @@
-/* место для вашего кода */
+.body {
+
+}
+
+.header {
+    padding: 0;
+    margin: 0px 0px 2735px 0px;
+}
+
+.menu {
+   margin: 133px 658.52px 138px 50px;
+}
+
+.logo {
+    margin: 92px 474px 96px 478px;
+}
+
+.contacts {
+    margin: 95px 50px 100px 810px;
+}
+
+.cover {
+    margin: 165px 50px 207px 50px;
+}
+
+.discription {
+    margin: 656px 50px 50px 50px;
+}
+
+.lots {
+    margin: 1230px 24px 1075px 24px;
+}
+
+.list-film {
+    margin: 74px 718px 53px 0px;
+}
+
+.about {
+
+}
+
+.footer {
+
+}
