@@ -3,73 +3,116 @@
 
 /* Шапка сайта */
 .header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    width: 1100px;
+    height: 293px;
     padding: 0;
-    margin: 0px 0px 2735px 0px;
+    background-color: aqua;
 }
 
 /*Контейнер навигации*/
 .header__menu {
-   margin: 133px 658.52px 138px 50px;
+    width: 391.48px;
+    height: 22px;
+    margin: 133px 37px 138px 50px;
 }
 
 /*Список ссылок шапка*/
 .header__links-list {
-
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 13px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
-
 /*Пункт списка шапка*/
 .header__links-list-item {
-
+    list-style-type: circle;
+    margin-left: 12px;
 }
 
 /*Ссылка в пункте списка*/
 .header__link {
-
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-size: 16px;
 }
 
 /*Ссылка без кружочка*/
 .header__links-list-item_no-bullit {
-
+    list-style: none;
+    margin-left: 0;
 }
 
 /*Выбранная ссылка меню без подчёркивания*/
 .header__link_active {
-
+    text-decoration: none;
 }
 
 /*Контейнер с логотипом*/
 .header__logo {
-    margin: 92px 474px 96px 478px;
+
+}
+
+/*Ссылка с логотипом*/
+.header__logo-link {
+    display: block;
+    width: 148px;
+    height: 105px;
 }
 
 /*Картинка с логотипом*/
-.header__logo-image
+.header__logo-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
 /*Контейнер с адресом*/
 .address {
-    margin: 95px 50px 100px 810px;
+    width: 240;
+    height: 98;
 }
 
 /*Класс для выравнивания блока в шапке*/
 .header__address {
-
+    width: 240px;
+    height: 98px;
 }
-
-/**/
 
 /*Секция c оверлеем*/
 .cover {
-    margin: 165px 50px 207px 50px;
+    width: 100%;
 }
 
 /*Контейнер полупрозрачного блока поверх секции*/
 .overlay {
-
+    width: 1100px;
+    height: 757px;
+    margin: 0 auto;
+    opacity: 60%;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /*Заголовок над оверлеем*/
 .cover__title {
-
+    width: 1100px;
+    height: 385px;
+    margin: 0 auto;
+    padding-top: 165px;
+    padding-left: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 30%;
+    text-transform: uppercase;
 }
 
 /*Для превращения строк заголовка в блочный элемент*/
@@ -79,7 +122,6 @@
 
 /*Класс для выравнивания строк левого текста*/
 .aligned-text_left {
-
 }
 
 /*Класс для выравнивания строк центрального текста*/
@@ -104,7 +146,7 @@
 
 /*Контейнер с подзаголовком и кнопкой*/
 .cover__description {
-    margin: 656px 50px 50px 50px;
+    background-color: aquamarine;
 }
 
 /*Текст подзаголовка*/
@@ -119,7 +161,7 @@
 
 /*Секция с лотами*/
 .lots {
-    margin: 1230px 24px 1075px 24px;
+    background-color: blue;
 }
 
 /*Заголовок*/
@@ -209,7 +251,7 @@
 
 /*Подвал*/
 .footer {
-
+    
 }
 
 /*Блок навигации по списку ссылок*/
