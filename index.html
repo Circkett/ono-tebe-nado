@@ -13,7 +13,7 @@
 <!--Тело страницы-->
   <body>
     <!--Шапка сайта-->
-    <header class="header">
+    <header class="header container">
       <!--Контейнер навигации в шапке-->
       <nav class="header__menu">
         <!--Список ссылок-->
@@ -46,95 +46,95 @@
       </div>
       <!--Контейнер с адресом-->
       <!--Класс для выравнивания блока в шапке-->
-      <div class="address header__address">
+      <div class="header__address">
         <!-- Адрес в шапке-->
-        <address>
-          +9 999 555 5555
-          info@sobaka.ge
-          наб. Принсенграхт 263- 265, Амстердам
+        <address class="address">
+          <a href="tel:99995555555" class="header__link">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge" class="header__link">info@sobaka.ge</a>
+          <span class="address_text">наб. Принсенграхт 263- 265, Амстердам</span>
         </address>
       </div>
     </header>
     <!--Контейнер, отображает содержимое страницы-->
     <main>
       <!--Секция cover-->
-      <section class="cover">
+      <section class="cover container">
         <!--Контейнер полупрозрачного блока поверх секции-->
-        <div class="overlay">
+        <div class="cover__image">
         </div>
-        <div>
-          <!--Заголовок-->
-          <h1 class="cover__title">
-          <!--Чтобы текст разбился на 3 строки-->
-          <!--Классы для выравнивания строк текста-->
-          <!--Класс для управления межбуквенным расстоянием в местах, где есть эти акценты-->
-            <span class="aligned-text aligned-text_left letter-spacing-extended">оно</span>
-            <span class="aligned-text aligned-text_center letter-spacing-extended">тебе</span>
-          <!--Класс для обнуления общего межбуквенного расстояния у последней буквы-->
-            <span class="aligned-text aligned-text_right letter-spacing-extended no-letter-spacing">надо</span>
-          </h1>
+        <div class="cover__overlay">
         </div>
-        <!--Контейнер с подзаголовком и кнопкой-->
-        <div class="cover__description">
+      </section>
+      <div class="cover__title container">
+        <!--Заголовок-->
+        <h1 class="cover__title-text">
+        <!--Чтобы текст разбился на 3 строки-->
+        <!--Классы для выравнивания строк текста-->
+        <!--Класс для управления межбуквенным расстоянием в местах, где есть эти акценты-->
+          <span class="aligned-text aligned-text_left letter-spacing-extended">оно</span>
+          <span class="aligned-text aligned-text_center letter-spacing-extended">тебе</span>
+        <!--Класс для обнуления общего межбуквенного расстояния у последней буквы-->
+          <span class="aligned-text aligned-text_right letter-spacing-extended no-letter-spacing">надо</span>
+        </h1>
+      </div>
+      <!--Контейнер с подзаголовком и кнопкой-->
+      <div class="cover__description container">
           <!--Текст подзаголовка-->
           <p class="cover__description-text"></p>
           <!--Кнопка "Сделать ставку"-->
           <button class="bet-button"></button>
-        </div>
-      </section>
+      </div>
       <!--Секция с лотами-->
-      <section class="lots">
+      <section class="lots container">
         <!--Заголовок-->
         <h2 class="lots__heading"></h1>
         <!--Контейнер списка карточек-->
-        <div class="lots__card-list">
-          <ul>
-            <!--Маркированный список - Фильм-->
-            <li class="lots__card-list-item">
-              <!--Ссылка, обрамляющая карточку Фильм-->
-              <a class="card-link">
-                <!--Контент карточки Фильм-->
-                <article class="card card_type_film overlay">
-                  <!--Заголовок карточки Фильм-->
-                  <h3 class="card__title"></h3>
-                  <!--Текст карточки Фильм-->
-                  <p class="card__text"></p>
-                </article>
-              </a>
-            </li>
-            <!--Маркированный список - Книга-->
-            <li class="lots__card-list-item">
-              <!--Ссылка, обрамляющая карточку Книга-->
-              <a class="card-link">
-                <!--Контент карточки Книга-->
-                <article class="card card_type_book overlay">
-                  <!--Заголовок карточки Книга-->
-                  <h3 class="card__title"></h3>
-                  <!--Текст карточки Книга-->
-                  <p class="card__text"></p>
-                </article>
-              </a>
-            </li>
-            <!--Маркированный список - Картина-->
-            <li class="lots__card-list-item">
-              <!-- Ссылка, обрамляющая карточку Картина-->
-              <a class="card-link">
-                <!--Контент карточки Картина-->
-                <article class="card card_type_picture overlay">
-                  <!--Заголовок карточки Картина-->
-                  <h3 class="card__title"></h3>
-                  <!--Текст карточки Картина-->
-                  <p class="card__text"></p>
-                </article>
-              </a>
-            </li>
+        <ul class="lots__card-list">
+          <!--Маркированный список - Фильм-->
+          <li class="lots__card-list-item">
+            <!--Ссылка, обрамляющая карточку Фильм-->
+            <a class="card-link">
+              <!--Контент карточки Фильм-->
+              <article class="card card_type_film overlay">
+                <!--Заголовок карточки Фильм-->
+                <h3 class="card__title"></h3>
+                <!--Текст карточки Фильм-->
+                <p class="card__text"></p>
+              </article>
+            </a>
+          </li>
+          <!--Маркированный список - Книга-->
+          <li class="lots__card-list-item">
+            <!--Ссылка, обрамляющая карточку Книга-->
+            <a class="card-link">
+              <!--Контент карточки Книга-->
+              <article class="card card_type_book overlay">
+                <!--Заголовок карточки Книга-->
+                <h3 class="card__title"></h3>
+                <!--Текст карточки Книга-->
+                <p class="card__text"></p>
+              </article>
+            </a>
+          </li>
+          <!--Маркированный список - Картина-->
+          <li class="lots__card-list-item">
+            <!-- Ссылка, обрамляющая карточку Картина-->
+            <a class="card-link">
+              <!--Контент карточки Картина-->
+              <article class="card card_type_picture overlay">
+                <!--Заголовок карточки Картина-->
+                <h3 class="card__title"></h3>
+                <!--Текст карточки Картина-->
+                <p class="card__text"></p>
+              </article>
+            </a>
+          </li>
           </ul>
-        </div>
         <!--Ссылка "посмотреть больше"-->
         <a class="lots__look-more-link"></a>
       </section>
       <!--Секция "Об акуционе"-->
-      <section class="about">
+      <section class="about container">
         <!--Контейнер с логотипом-->
         <div class="about__column about__logo">
           <!--Изображение логотипа-->
@@ -158,7 +158,7 @@
       </section>
     </main>
     <!--Подвал страницы-->
-    <footer class="footer">
+    <footer class="footer container">
       <!--Адрес в подвале-->
       <address class="address"></address>
       <!--Блок навигации в подвале-->
