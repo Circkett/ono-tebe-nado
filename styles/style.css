@@ -6,6 +6,7 @@
     max-width: 1100px;
     margin: 0 auto;
 }
+
 /* Шапка сайта */
 .header {
     display: grid;
@@ -77,6 +78,9 @@
 /*Контейнер с адресом*/
 .address {
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .address_text {
@@ -92,87 +96,101 @@
     justify-self: end;
 }
 
-/*Секция c оверлеем*/
+/*Секция c обложкой*/
 .cover {
-    margin: 0 auto;
     position: relative;
+    min-height: 757px;
 }
 
-/*Контейнер полупрозрачного блока поверх секции*/
+/*Картинка обложки*/
 .cover__image {
+    position: relative;
     height: 757px;
-    margin: 0 auto;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
+    z-index: 1;
 }
 
+/*Полупрозрачный блок*/
 .cover__overlay {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     background-color: #000;
     opacity: 60%;
+    z-index: 2;
 }
 
+/*Контейнер заголовка*/
 .cover__title {
-
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*Заголовок над оверлеем*/
 .cover__title-text {
-    width: 1100px;
-    height: 385px;
-    margin: 0 auto;
-    padding-top: 165px;
-    padding-left: 50px;
-    color: #fff;
     font-weight: 700;
     font-size: 100px;
-    line-height: 114.99999999999999%;
-    letter-spacing: 30%;
+    color: #fff;
     text-transform: uppercase;
+    line-height: 115px;
 }
 
 /*Для превращения строк заголовка в блочный элемент*/
 .aligned-text {
-
+    display: block;
 }
 
 /*Класс для выравнивания строк левого текста*/
 .aligned-text_left {
+    padding-left: 50px;
 }
 
 /*Класс для выравнивания строк центрального текста*/
 .aligned-text_center {
-
+    text-align: center;
 }
 
 /*Класс для выравнивания строк правого текста*/
 .aligned-text_right {
-
+    text-align: right;
+    padding-right: 50px;
 }
 
 /*Класс для для управления межбуквенным расстоянием в местах, где есть эти акценты*/
 .letter-spacing-extended {
-
+    letter-spacing: 30px;
 }
 
 /*Класс для обнуления общего межбуквенного расстояния у последней буквы*/
 .no-letter-spacing {
-
+    margin-right: -30px;
 }
 
 /*Контейнер с подзаголовком и кнопкой*/
 .cover__description {
-    background-color: aquamarine;
+    position: absolute;
+    height: 51px;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+
 }
 
 /*Текст подзаголовка*/
 .cover__description-text {
-
+    font-weight: 400;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 28px;
 }
 
 /*Кнопка "Сделать ставку"*/
