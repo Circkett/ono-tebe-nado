@@ -2,7 +2,6 @@
 /**/
 
 .container {
-    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -98,14 +97,14 @@
 
 /*Секция c обложкой*/
 .cover {
+    height: 757px;
     position: relative;
-    min-height: 757px;
 }
 
 /*Картинка обложки*/
 .cover__image {
     position: relative;
-    height: 757px;
+    height: 100%;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
@@ -124,8 +123,9 @@
 /*Контейнер заголовка*/
 .cover__title {
     position: absolute;
+    min-height: 100%;
     inset: 0;
-    z-index: 3;
+    z-index: 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,14 +174,14 @@
 /*Контейнер с подзаголовком и кнопкой*/
 .cover__description {
     position: absolute;
-    height: 51px;
     bottom: 50px;
     left: 50px;
+    right: 50px;
+    height: 51px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     z-index: 3;
-
 }
 
 /*Текст подзаголовка*/
@@ -191,11 +191,19 @@
     color: #fff;
     text-transform: uppercase;
     line-height: 28px;
+    word-spacing: 20px;
 }
 
 /*Кнопка "Сделать ставку"*/
 .bet-button {
-
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    height: 51px;
+    width: 256px;
+    border: 1px solid #fff;
 }
 
 /*Секция с лотами*/
