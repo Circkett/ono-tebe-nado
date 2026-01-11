@@ -97,14 +97,14 @@
 
 /*Секция c обложкой*/
 .cover {
-    height: 757px;
     position: relative;
+    height: 757px;
 }
 
 /*Картинка обложки*/
 .cover__image {
     position: relative;
-    height: 100%;
+    min-height: 100%;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
@@ -112,12 +112,13 @@
 }
 
 /*Полупрозрачный блок*/
-.cover__overlay {
+.overlay {
     position: absolute;
     inset: 0;
     background-color: #000;
     opacity: 60%;
-    z-index: 2;
+    z-index: 3;
+    pointer-events: none;
 }
 
 /*Контейнер заголовка*/
@@ -181,7 +182,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
+    z-index: 4;
 }
 
 /*Текст подзаголовка*/
@@ -196,6 +197,7 @@
 
 /*Кнопка "Сделать ставку"*/
 .bet-button {
+    cursor: pointer;
     background-color: transparent;
     font-weight: 500;
     font-size: 22px;
@@ -208,62 +210,83 @@
 
 /*Секция с лотами*/
 .lots {
-    background-color: blue;
+    height: 723px;
+    position: relative;
+}
+
+.container {
+
 }
 
 /*Заголовок*/
 .lots__heading {
+    width: 121px;
+    height: 47px;
+    margin-left: 40px;
+    font-size: 40px;
+    line-height: 100%;
+    text-transform: uppercase;
 
 }
 
 /*Контейнер списка карточек*/
 .lots__card-list {
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /*Пункт маркированного списока*/
 .lots__card-list-item {
-
+    width: 334px;
+    min-height: 596px;
+    margin-top: 74px;
 }
 
 /*Ссылка обрамляющая карточку*/
 .card-link {
-
+    height: 100%;
 }
 
 /*Карточка*/
 .card {
-
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*Фон карточки Фильм*/
 .card_type_film {
-
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 /*Фон карточки Книга*/
 .card_type_book {
-
+    background-image: url(../images/card-lot-02.jpg);
 }
 
 /*Фон карточки Картина*/
 .card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
 
 }
 
 /*Заголовок карточки*/
 .card__title {
-
+    z-index: 3;
 }
 
 /*Текст карточки*/
 .card__text {
-
+    z-index: 3;
 }
 
 /*Ссылка "посмотреть больше"*/
 .lots__look-more-link {
-
+    z-index: 4;
 }
 
 /*Секция Об аукционе*/
