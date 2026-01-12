@@ -57,11 +57,6 @@
     text-decoration: none;
 }
 
-/*Контейнер с логотипом*/
-.header__logo {
-
-}
-
 /*Ссылка с логотипом*/
 .header__logo-link {
     display: block;
@@ -233,12 +228,6 @@
     text-transform: uppercase;
 }
 
-
-/*Контейнер списка карточек*/
-.lots__card-list-container {
-
-}
-
 /*Контейнер списка карточек*/
 .lots__card-list {
     list-style: none;
@@ -338,10 +327,6 @@
     margin: 120px auto 0 auto;
 }
 
-/*Класс для колонок*/
-.about__column {
-}
-
 /*Контейнер с логотипом*/
 .about__logo {
     max-width: 100%;
@@ -418,11 +403,6 @@
     flex-direction: column;
     align-items: center;
     list-style: none;
-
-}
-
-/*Пункт списка меню*/
-.footer__menu-list-item {
 }
 
 /*Ссылка пункта меню*/
