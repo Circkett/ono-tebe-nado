@@ -149,15 +149,15 @@
         <!--Контейнер с текстом-->
         <div class="about__column">
           <!--Секция заголовка-->
-          <section>
+          <section class="about__text">
             <!--Заголовок-->
             <h1 class="about__title">Об аукционе</h1>
             <!--Блок с текстом-->
-            <div class="about__text">
+            <div class="about__text_paragraph">
               <!--Первый параграф-->
-              <p class="about__p">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+              <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
               <!--Второй параграф-->
-              <p class="about__p">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+              <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
 на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
             </div>
           </section>
@@ -167,7 +167,11 @@
     <!--Подвал страницы-->
     <footer class="footer container">
       <!--Адрес в подвале-->
-      <address class="address"></address>
+      <address class="address footer__address">
+          <a href="tel:99995555555" class="footer__link">+9 999 555 5555</a>
+          <a href="mailto:info@sobaka.ge" class="footer__link">info@sobaka.ge</a>
+          <span class="address_text">наб. Принсенграхт 263- 265, Амстердам</span>
+      </address>
       <!--Блок навигации в подвале-->
       <nav class="footer__menu">
         <!--Маркированный список ссылок меню>-->
@@ -175,17 +179,17 @@
           <!--Пункт списка Главная-->
           <li class="footer__menu-list-item">
             <!--Ссылка-->
-            <a class="footer__menu-link footer__menu-link_active"></a>
+            <a class="footer__menu-link footer__menu-link_active">главная</a>
           </li>
           <!--Пункт списка Посмотреть лоты-->
           <li class="footer__menu-list-item">
             <!--Ссылка-->
-            <a class="footer__menu-link"></a>
+            <a class="footer__menu-link">посмотреть лоты</a>
           </li>
           <!--Пункт списка Об аукционе-->
           <li class="footer__menu-list-item">
             <!--Ссылка-->
-            <a class="footer__menu-link"></a>
+            <a class="footer__menu-link">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -195,25 +199,25 @@
           <!--Пункт списка Youtube-->
           <li class="footer__social-list-item">
             <!--Ссылка-->
-            <a class="footer__social-link">
+            <a href="https://www.youtube.com/" class="footer__social-link">
               <!--Картинка Ютуб-->
-              <img src="" alt="Ссылка на Ютуб" class="footer__social-icon">
+              <img src="./images/yt.svg" alt="Ссылка на Ютуб" class="footer__social-icon">
             </a>
           </li>
           <!--Пункт списка VK-->
           <li class="footer__social-list-item">
             <!--Ссылка-->
-            <a class="footer__social-link">
+            <a href="https://vk.com/" class="footer__social-link">
               <!--Картинка ВК-->
-              <img src="" alt="Ссылка на ВК" class="footer__social-icon">
+              <img src="./images/vk.svg" alt="Ссылка на ВК" class="footer__social-icon">
             </a>
           </li>
           <!--Пункт списка Pinterest-->
           <li class="footer__social-list-item">
             <!--Ссылка-->
-            <a class="footer__social-link">
+            <a href="https://ru.pinterest.com/" class="footer__social-link">
               <!--Картинка Пинтерест-->
-              <img src="" alt="Ссылка на Пинтерест" class="footer__social-icon">
+              <img src="./images/pinterest.svg" alt="Ссылка на Пинтерест" class="footer__social-icon">
             </a>
           </li>
         </ul>
