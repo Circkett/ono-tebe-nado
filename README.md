@@ -1,1 +1,1 @@
-https://github.com/Circkett/ono-tebe-nado
+https://github.com/Circkett/ono-tebe-nado-fd
