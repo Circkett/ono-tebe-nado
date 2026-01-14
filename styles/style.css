@@ -5,12 +5,6 @@ body {
     max-width: 1100px;
 }
 
-.container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
 /* HEADER */
 /*#region*/
 /* Шапка сайта */
@@ -25,7 +19,6 @@ body {
 /*Контейнер навигации*/
 .header__menu {
     width: max-content;
-    height: 22px;
 }
 
 /*Список ссылок шапка*/
@@ -43,9 +36,9 @@ body {
 }
 
 /*Ссылка в пункте списка*/
-.header__link {
+.link {
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-underline-offset: 4px;
     font-size: 18px;
     line-height: 24px;
     cursor: pointer;
@@ -104,13 +97,13 @@ body {
 /*Секция c обложкой*/
 .cover {
     position: relative;
-    height: 757px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Картинка обложки*/
 .cover__image {
-    position: relative;
-    min-height: 100%;
+    min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
@@ -129,7 +122,7 @@ body {
 
 /*Контейнер заголовка*/
 .cover__title {
-    position: absolute;
+    position: relative;
     min-height: 100%;
     inset: 0;
     z-index: 2;
@@ -180,14 +173,13 @@ body {
 
 /*Контейнер с подзаголовком и кнопкой*/
 .cover__description {
-    position: absolute;
     padding: 0 50px;
-    bottom: 50px;
-    height: 51px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    margin-top: auto;
+    padding-bottom: 50px;
 }
 
 /*Текст подзаголовка*/
@@ -293,7 +285,6 @@ body {
     margin: 0;
     color: #fff;
     line-height: 26px;
-    word-spacing: 2px;
 }
 
 /*Текст карточки*/
@@ -387,14 +378,6 @@ body {
 
 .footer__address {
     width: 264px;
-}
-
-.footer__link {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    font-size: 18px;
-    line-height: 24px;
-    cursor: pointer;
 }
 
 
