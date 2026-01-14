@@ -372,8 +372,8 @@ body {
 .footer {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    margin: 180px auto 96px auto;
-    padding: 0 50px 82px 50px;
+    margin: 180px auto 0px auto;
+    padding: 0 50px 0px 50px;
 }
 
 .footer__address {
